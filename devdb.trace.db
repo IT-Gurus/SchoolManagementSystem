@@ -1,0 +1,6 @@
+2021-09-19 08:14:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ORDER[*] (ORDER_ID BIGINT NOT NULL, PRIMARY KEY (ORDER_ID))"; expected "identifier"; SQL statement:
+create table order (order_id bigint not null, primary key (order_id)) [42001-200]
+2021-09-19 08:32:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ORDER[*] (ORDER_ID BIGINT NOT NULL, PRIMARY KEY (ORDER_ID))"; expected "identifier"; SQL statement:
+create table order (order_id bigint not null, primary key (order_id)) [42001-200]
