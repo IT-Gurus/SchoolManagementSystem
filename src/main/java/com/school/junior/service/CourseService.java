@@ -5,6 +5,9 @@ import com.school.junior.repository.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 public class CourseService {
 
@@ -37,4 +40,15 @@ public class CourseService {
 
     }
 
+    public Optional<Course> getCourseById(Long courseId) {
+        return courseRepository.findById(courseId);
+    }
+
+    public void save(Course course) {
+        courseRepository.save(course);
+    }
+
+    public List<Course> getAllCourses() {
+       return courseRepository.findAll();
+    }
 }
